@@ -1,8 +1,10 @@
 #ifndef _FUNCTIONS_H_
 #define _FUNCTIONS_H_
 
-    double norm_2(unsigned int dimension, double x[], double y[]);
-    double norm_infinite(unsigned int dimension, double x[], double y[]);
-    double norm_1(unsigned int dimension, double x[], double y[]);
+    double dist_2(unsigned int dimension, const double x[], const double y[]);
+    double dist_infinite(unsigned int dimension, const double x[], const double y[]);
+    double dist_1(unsigned int dimension, const double x[], const double y[]);
+    double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]);
+
 
 #endif

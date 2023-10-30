@@ -5,8 +5,8 @@
 #include "functions.h"
 
 
-// norms
-double norm_2(unsigned int dimension, double x[], double y[]) {
+// Distances
+double dist_2(unsigned int dimension, const double x[], const double y[]) {
 
     double norm = 0;
 
@@ -16,7 +16,7 @@ double norm_2(unsigned int dimension, double x[], double y[]) {
 }
 
 
-double norm_infinite(unsigned int dimension, double x[], double y[]) {
+double dist_infinite(unsigned int dimension, const double x[], const double y[]) {
 
     double norm = 0;
 
@@ -30,8 +30,33 @@ double norm_infinite(unsigned int dimension, double x[], double y[]) {
     return norm;
 }
 
-double norm_1(unsigned int dimension, double x[], double y[]) {
-    
+double dist_1(unsigned int dimension, const double x[], const double y[]) {
 
+    double norm = 0;
+
+    for (int i = 0; i < dimension; ++i) norm += fabs( x[i] - y[i] );
+
+    return norm;
 }
 
+double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]) {
+
+    if (p == 0) {
+
+        fprintf(stderr, "p == 0.\n");
+        exit(1);
+    }
+
+    double norm = 0;
+
+    if (p == 1) {
+
+        for (int i = 0; i < dimension; ++i) norm += fabs( x[i] - y[i] );
+    } else {
+
+        for (int i = 0; i < dimension; ++i) norm += pow(( x[i] - y[i] ) , p);
+        norm = pow(norm, 1 / p);
+    }
+
+    return norm;
+}

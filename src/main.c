@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
 
     double x[] = {1, 2}, y[] = {2, 1};
 
-    double norm = norm_2(2, x, y);
+    double norm = dist_2(2, x, y);
     printf("%lf\n", norm);
 
     printf("Hello World !\n");
