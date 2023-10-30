@@ -41,6 +41,7 @@ double dist_1(unsigned int dimension, const double x[], const double y[]) {
 
 double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]) {
 
+
     if (p == 0) {
 
         fprintf(stderr, "p == 0.\n");

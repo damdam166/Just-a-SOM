@@ -11,6 +11,7 @@ add_executable(Just_a_SOM
         src/functions/functions.h
         src/kohonen_algorithm/kohonen_som.c
         src/kohonen_algorithm/kohonen_som.h
+        src/compiling.sh
         src/main.c
         LICENSE
         README.md)
