@@ -1,8 +1,8 @@
 #ifndef _FUNCTIONS_H_
 #define _FUNCTIONS_H_
 
-    double euclidean_norm(unsigned int dimension, double x[], double y[]);
-    double tchebychev_norm(unsigned int dimension, double x[], double y[]);
-
+    double norm_2(unsigned int dimension, double x[], double y[]);
+    double norm_infinite(unsigned int dimension, double x[], double y[]);
+    double norm_1(unsigned int dimension, double x[], double y[]);
 
 #endif
