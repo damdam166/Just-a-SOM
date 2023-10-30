@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  30 OCT 2023 21:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  30 OCT 2023 22:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,7 +706,7 @@ File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count334
 \l__pdf_internal_box=\box76
 )
-No file diapo.aux.
+(./diapo.aux)
 \openout1 = `diapo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -727,6 +727,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -784,6 +785,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 17.
+
+(./diapo.out) (./diapo.out)
 \@outlinefile=\write5
 \openout5 = `diapo.out'.
 
@@ -863,13 +866,34 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictiona
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-)
-No file diapo.nav.
-[1
+) (./diapo.nav) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file diapo.toc.
-[2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./diapo.toc) [2
+
+] [3
+
+]
+<pics/som_example_diapo_1.png, id=105, 574.145pt x 640.3925pt>
+File: pics/som_example_diapo_1.png Graphic file (type png)
+<use pics/som_example_diapo_1.png>
+Package pdftex.def Info: pics/som_example_diapo_1.png  used on input line 58.
+(pdftex.def)             Requested size: 92.1879pt x 102.81667pt.
+ [4
+
+ <./pics/som_example_diapo_1.png>] [5
+
+] [6
+
+]
+[7
+
+] [8
+
+] [9
+
+] [10
+
+] [11
 
 ]
 \tf@nav=\write6
@@ -888,24 +912,25 @@ Package rerunfilecheck Warning: File `diapo.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `diapo.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Before: 0EE6F05DC9EA426BC954C1B5ED6580C1;83
+(rerunfilecheck)             After:  B9606D25781253D0640F213192DAACCD;274.
  ) 
 Here is how much of TeX's memory you used:
- 21379 strings out of 477277
- 414976 string characters out of 5816798
+ 21498 strings out of 477277
+ 416784 string characters out of 5816798
  1857793 words of memory out of 6000000
- 41098 multiletter control sequences out of 15000+600000
- 514099 words of font info for 38 fonts, out of 8000000 for 9000
+ 41182 multiletter control sequences out of 15000+600000
+ 514712 words of font info for 40 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  128i,14n,122p,409b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on diapo.pdf (2 pages, 34413 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
+Output written on diapo.pdf (11 pages, 200720 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
