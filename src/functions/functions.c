@@ -55,8 +55,8 @@ double dist_p(unsigned int p, unsigned int dimension, const double x[], const do
         for (int i = 0; i < dimension; ++i) norm += fabs( x[i] - y[i] );
     } else {
 
-        for (int i = 0; i < dimension; ++i) norm += pow(( x[i] - y[i] ) , p);
-        norm = pow(norm, 1 / p);
+        for (int i = 0; i < dimension; ++i) norm += pow(fabs( x[i] - y[i] ) , p);
+        norm = pow(norm, 1.0 / p);
     }
 
     return norm;
