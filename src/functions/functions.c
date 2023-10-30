@@ -14,3 +14,4 @@ double euclidean_norm(unsigned int dimension, double x[], double y[]) {
 
     return sqrt(norm);
 }
+

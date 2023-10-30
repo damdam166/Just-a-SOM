@@ -7,10 +7,10 @@ include_directories(src/functions)
 include_directories(src/kohonen_algorithm)
 
 add_executable(Just_a_SOM
-    src/functions/functions.c
-    src/functions/functions.h
-    src/kohonen_algorithm/kohonen_som.c
-    src/kohonen_algorithm/kohonen_som.h
-    src/main.c
-    LICENSE
-    README.md)
+        src/functions/functions.c
+        src/functions/functions.h
+        src/kohonen_algorithm/kohonen_som.c
+        src/kohonen_algorithm/kohonen_som.h
+        src/main.c
+        LICENSE
+        README.md)
