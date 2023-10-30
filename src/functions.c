@@ -6,7 +6,7 @@
 
 
 // norms
-double euclidean_norm(unsigned int dimension, double x[], double y[]) {
+double euclidean_norm(size_t dimension, double x[], double y[]) {
 
     int norm = 0;
 
