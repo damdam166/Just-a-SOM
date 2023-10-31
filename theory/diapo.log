@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  30 OCT 2023 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  31 OCT 2023 08:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -873,19 +873,38 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [3
 
 ]
-<pics/som_example_diapo_1.png, id=105, 574.145pt x 640.3925pt>
+<pics/som_example_diapo_1.png, id=113, 574.145pt x 640.3925pt>
 File: pics/som_example_diapo_1.png Graphic file (type png)
 <use pics/som_example_diapo_1.png>
-Package pdftex.def Info: pics/som_example_diapo_1.png  used on input line 58.
+Package pdftex.def Info: pics/som_example_diapo_1.png  used on input line 60.
 (pdftex.def)             Requested size: 92.1879pt x 102.81667pt.
  [4
 
- <./pics/som_example_diapo_1.png>] [5
+ <./pics/som_example_diapo_1.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
+ut line 78.
+
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+[5
 
 ] [6
 
-]
-[7
+] [7
 
 ] [8
 
@@ -906,31 +925,26 @@ Package pdftex.def Info: pics/som_example_diapo_1.png  used on input line 58.
 \openout8 = `diapo.snm'.
 
  (./diapo.aux)
-
-Package rerunfilecheck Warning: File `diapo.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `diapo.out':
-(rerunfilecheck)             Before: 0EE6F05DC9EA426BC954C1B5ED6580C1;83
-(rerunfilecheck)             After:  B9606D25781253D0640F213192DAACCD;274.
+Package rerunfilecheck Info: File `diapo.out' has not changed.
+(rerunfilecheck)             Checksum: B9606D25781253D0640F213192DAACCD;274.
  ) 
 Here is how much of TeX's memory you used:
- 21498 strings out of 477277
- 416784 string characters out of 5816798
- 1857793 words of memory out of 6000000
- 41182 multiletter control sequences out of 15000+600000
- 514712 words of font info for 40 fonts, out of 8000000 for 9000
+ 21598 strings out of 477277
+ 419231 string characters out of 5816798
+ 1856793 words of memory out of 6000000
+ 41261 multiletter control sequences out of 15000+600000
+ 519650 words of font info for 58 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  128i,14n,122p,409b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on diapo.pdf (11 pages, 200720 bytes).
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on diapo.pdf (11 pages, 210341 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 303 compressed objects within 4 object streams
+ 347 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
  26 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
