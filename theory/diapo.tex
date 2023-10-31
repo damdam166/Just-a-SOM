@@ -9,6 +9,8 @@
 \institute{ENSEIRB-MATMECA}
 
 
+\renewcommand{\normalsize}{\fontsize{6}{12}\selectfont}
+
 \setbeamertemplate{footline}{%
 	\hfill\insertframenumber/\inserttotalframenumber
 }
@@ -48,7 +50,12 @@ It is a neural network of just one layer : the output layer.
  	
 			
 		\begin{center}
-			\includegraphics[width=0.3\linewidth]{pics/som_example_diapo_1.png}
+			
+			\begin{figure}[h]
+			
+				\includegraphics[width=0.3\linewidth]{pics/som_example_diapo_1.png}
+				\caption{Reprensation of a SOM (2) of Bibliography.}
+			\end{figure}
 		\end{center}
 
 		\end{block}		
@@ -84,7 +91,11 @@ A self-organizing map (SOM) is used to produce a low-dimensional (typically two-
 
 			\begin{center}
 				
-				\includegraphics[width=0.5\linewidth]{pics/Perceptrons-1024x724.jpeg}
+				\begin{figure}[h]
+
+					\includegraphics[width=0.4\linewidth]{pics/Perceptrons-1024x724.jpeg}
+					\caption{Diagram of a Perceptron.}	
+				\end{figure}
 			\end{center}
 
 			It is also a one-layer neuronal network. However, this one is used to separate two different classes. The output is actually a binary one. 
@@ -110,17 +121,24 @@ A self-organizing map (SOM) is used to produce a low-dimensional (typically two-
 		K-means algorithm is an unsupervised learning technique that can automatically gather data by creating\textbf{clusters}, which are subsets of data elements that share common characteristics.
 
 		\begin{center}
-		
-			\includegraphics[width=0.6\linewidth]{pics/kmeans.jpeg}
-		\end{center}
 			
+			\begin{figure}[h]
+			
+				\includegraphics[width=0.6\linewidth]{pics/kmeans.jpeg}
+				\caption{Process of K-means algorithm}
+			\end{figure}
+		\end{center}
+				
 		The user must define the number of clusters \textbf{K}. However, The SOM does not require this, it guesses the right amount of clusters.
 
 	\end{frame}
 
 	
 	\begin{frame}{Convergence}
-	
+		
+		The convergence of the SOM algorithm depends on the dimension of the dataset(1).
+
+
 	\end{frame}
 
 
