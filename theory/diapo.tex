@@ -30,52 +30,6 @@
 	\tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsectionstyle=show/shaded/hide]
 \end{frame}
 
-
-
-\section{Just an example}
-
-	\begin{frame}
-	
-		\Huge EXAMPLE
-	\end{frame}
-
-        
-	\begin{frame}{Example}
-  
-		\begin{columns}
-    
-			\begin{column}{0.33\textwidth}
-      		
-				\centering 
-				\includegraphics[width=1\textwidth]{pics/algo_1_1.png}
-Step 1
-			\end{column}
-
-    
-			\begin{column}{0.33\textwidth}
-      
-				\centering
-				\includegraphics[width=1\textwidth]{pics/algo_1_2.png}
-Step 2
-    			\end{column}
-
-
-			\begin{column}{0.33\textwidth}
-      
-				\centering
-				\includegraphics[width=1\textwidth]{pics/algo_1_3.png}
-Step 3
-    			\end{column}
-		\end{columns}
-	
-		\begin{enumerate}
-
-			\item Initialize the weigth vectors (randomly or not).
-			\item Select a data vector(blue), then chose the closest weigth vector(green) to it.
-			\item Update the winner and its neighbors (all green ones).
-			\item repeat the process till reach max$\textunderscore$iteration
-		\end{enumerate}
-	\end{frame}	
 	
 
 \section{Overview}
@@ -101,7 +55,7 @@ It is a neural network of just one layer : the output layer.
 			\begin{figure}[h]
 			
 				\includegraphics[width=0.3\linewidth]{pics/som_example_diapo_1.png}
-				\caption{Representation of a SOM (2 of Bibliography).}
+				\caption{SOM Architecture (2 of Bibliography).}
 			\end{figure}
 		\end{center}
 
@@ -131,7 +85,48 @@ A self-organizing map (SOM) is used to produce a low-dimensional (typically two-
 
 	\end{frame}
 	
-		
+
+	\begin{frame}{Example}
+  
+		\begin{columns}
+    
+			\begin{column}{0.33\textwidth}
+      
+				\centering
+				\includegraphics[width=1\textwidth]{pics/algo_1_1.png}
+Step 1
+    			\end{column}
+
+    				
+			\begin{column}{0.33\textwidth}
+      
+				\centering
+				\includegraphics[width=1\textwidth]{pics/algo_1_2.png}
+Step 2
+    			\end{column}
+
+    
+			\begin{column}{0.33\textwidth}
+      
+				\centering
+      				\includegraphics[width=1\textwidth]{pics/algo_1_3.png}
+Step 3
+    			\end{column}
+		\end{columns}
+
+
+
+
+               	\begin{enumerate}
+
+                        \item Initialize the weight vectors (randomly or not).
+                        \item Select a data vector(blue), then chose the closest weight vector(green) to it.
+                        \item Update the winner and its neighbors (all green ones).
+                        \item repeat the process till reach max$\textunderscore$iteration
+                \end{enumerate}
+        \end{frame}
+
+
 	\begin{frame}{Similarities with the Perceptron}
 	
 		\begin{block}{Perceptron}

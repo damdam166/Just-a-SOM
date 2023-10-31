@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  31 OCT 2023 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  31 OCT 2023 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -873,98 +873,96 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [3
 
 ]
-<pics/algo_1_1.png, id=117, 228.25275pt x 220.4235pt>
-File: pics/algo_1_1.png Graphic file (type png)
-<use pics/algo_1_1.png>
-Package pdftex.def Info: pics/algo_1_1.png  used on input line 78.
-(pdftex.def)             Requested size: 101.40622pt x 97.92838pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+<pics/som_example_diapo_1.png, id=112, 464.73625pt x 514.92375pt>
+File: pics/som_example_diapo_1.png Graphic file (type png)
+<use pics/som_example_diapo_1.png>
+Package pdftex.def Info: pics/som_example_diapo_1.png  used on input line 68.
+(pdftex.def)             Requested size: 92.1879pt x 102.14221pt.
+ [4
+
+ <./pics/som_example_diapo_1.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 78.
+ut line 86.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<pics/algo_1_2.png, id=119, 229.45724pt x 221.02576pt>
+[5
+
+]
+<pics/algo_1_1.png, id=168, 228.25275pt x 220.4235pt>
+File: pics/algo_1_1.png Graphic file (type png)
+<use pics/algo_1_1.png>
+Package pdftex.def Info: pics/algo_1_1.png  used on input line 127.
+(pdftex.def)             Requested size: 101.40622pt x 97.92838pt.
+<pics/algo_1_2.png, id=169, 229.45724pt x 221.02576pt>
 File: pics/algo_1_2.png Graphic file (type png)
 <use pics/algo_1_2.png>
-Package pdftex.def Info: pics/algo_1_2.png  used on input line 78.
+Package pdftex.def Info: pics/algo_1_2.png  used on input line 127.
 (pdftex.def)             Requested size: 101.40622pt x 97.67995pt.
-<pics/algo_1_3.png, id=120, 228.25275pt x 220.4235pt>
+<pics/algo_1_3.png, id=170, 228.25275pt x 220.4235pt>
 File: pics/algo_1_3.png Graphic file (type png)
 <use pics/algo_1_3.png>
-Package pdftex.def Info: pics/algo_1_3.png  used on input line 78.
+Package pdftex.def Info: pics/algo_1_3.png  used on input line 127.
 (pdftex.def)             Requested size: 101.40622pt x 97.92838pt.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 78.
-
-[4
-
- <./pics/algo_1_1.png> <./pics/algo_1_2.png> <./pics/algo_1_3.png>] [5
-
-]
-<pics/som_example_diapo_1.png, id=175, 574.145pt x 640.3925pt>
-File: pics/som_example_diapo_1.png Graphic file (type png)
-<use pics/som_example_diapo_1.png>
-Package pdftex.def Info: pics/som_example_diapo_1.png  used on input line 114.
-(pdftex.def)             Requested size: 92.1879pt x 102.81667pt.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 127.
 
 [6
 
- <./pics/som_example_diapo_1.png>] [7
-
-]
-<pics/Perceptrons-1024x724.jpeg, id=230, 770.88pt x 545.03625pt>
+ <./pics/algo_1_1.png> <./pics/algo_1_2.png> <./pics/algo_1_3.png>]
+<pics/Perceptrons-1024x724.jpeg, id=199, 770.88pt x 545.03625pt>
 File: pics/Perceptrons-1024x724.jpeg Graphic file (type jpg)
 <use pics/Perceptrons-1024x724.jpeg>
-Package pdftex.def Info: pics/Perceptrons-1024x724.jpeg  used on input line 163
+Package pdftex.def Info: pics/Perceptrons-1024x724.jpeg  used on input line 158
 .
 (pdftex.def)             Requested size: 122.91406pt x 86.89986pt.
- [8
+ [7
 
  <./pics/Perceptrons-1024x724.jpeg>]
-<pics/kmeans.jpeg, id=258, 770.88pt x 545.03625pt>
+<pics/kmeans.jpeg, id=227, 770.88pt x 545.03625pt>
 File: pics/kmeans.jpeg Graphic file (type jpg)
 <use pics/kmeans.jpeg>
-Package pdftex.def Info: pics/kmeans.jpeg  used on input line 181.
+Package pdftex.def Info: pics/kmeans.jpeg  used on input line 176.
 (pdftex.def)             Requested size: 184.3758pt x 130.35396pt.
-[9
+ [8
 
  <./pics/kmeans.jpeg>]
-<pics/dimension_error.png, id=283, 134.5025pt x 130.4875pt>
+<pics/dimension_error.png, id=253, 134.5025pt x 130.4875pt>
 File: pics/dimension_error.png Graphic file (type png)
 <use pics/dimension_error.png>
-Package pdftex.def Info: pics/dimension_error.png  used on input line 214.
+Package pdftex.def Info: pics/dimension_error.png  used on input line 209.
 (pdftex.def)             Requested size: 76.82246pt x 74.52995pt.
-<pics/topological_error.png, id=284, 238.8925pt x 117.43875pt>
+<pics/topological_error.png, id=254, 238.8925pt x 117.43875pt>
 File: pics/topological_error.png Graphic file (type png)
 <use pics/topological_error.png>
-Package pdftex.def Info: pics/topological_error.png  used on input line 214.
+Package pdftex.def Info: pics/topological_error.png  used on input line 209.
 (pdftex.def)             Requested size: 76.82246pt x 37.76573pt.
- [10
+ [9
 
- <./pics/dimension_error.png> <./pics/topological_error.png>] [11
+ <./pics/dimension_error.png> <./pics/topological_error.png>] [10
 
-] [12
+] [11
 
 ]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 256.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 251.
 
-[13
+[12
 
 ]
 \tf@nav=\write6
@@ -978,13 +976,13 @@ LaTeX Warning: Command \textunderscore invalid in math mode on input line 256.
 
  (./diapo.aux)
 Package rerunfilecheck Info: File `diapo.out' has not changed.
-(rerunfilecheck)             Checksum: 6F6F2D0BED9998BD82A5C834F76740FA;398.
+(rerunfilecheck)             Checksum: B9606D25781253D0640F213192DAACCD;274.
  ) 
 Here is how much of TeX's memory you used:
- 21694 strings out of 477277
- 421462 string characters out of 5816798
+ 21685 strings out of 477277
+ 421381 string characters out of 5816798
  1858793 words of memory out of 6000000
- 41347 multiletter control sequences out of 15000+600000
+ 41341 multiletter control sequences out of 15000+600000
  518302 words of font info for 53 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  128i,14n,122p,409b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -996,10 +994,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam7.pfb>
-Output written on diapo.pdf (13 pages, 408421 bytes).
+Output written on diapo.pdf (12 pages, 320327 bytes).
 PDF statistics:
- 431 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 31 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 399 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
