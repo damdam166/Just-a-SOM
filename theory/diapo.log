@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  31 OCT 2023 22:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  31 OCT 2023 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -958,11 +958,15 @@ Package pdftex.def Info: pics/topological_error.png  used on input line 209.
 
 ] [11
 
+] [12
+
+] [13
+
 ]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 251.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 281.
 
-[12
+[14
 
 ]
 \tf@nav=\write6
@@ -979,10 +983,10 @@ Package rerunfilecheck Info: File `diapo.out' has not changed.
 (rerunfilecheck)             Checksum: B9606D25781253D0640F213192DAACCD;274.
  ) 
 Here is how much of TeX's memory you used:
- 21685 strings out of 477277
- 421381 string characters out of 5816798
+ 21693 strings out of 477277
+ 421451 string characters out of 5816798
  1858793 words of memory out of 6000000
- 41341 multiletter control sequences out of 15000+600000
+ 41345 multiletter control sequences out of 15000+600000
  518302 words of font info for 53 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  128i,14n,122p,409b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -994,10 +998,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam7.pfb>
-Output written on diapo.pdf (12 pages, 320327 bytes).
+Output written on diapo.pdf (14 pages, 323397 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
- 28 named destinations out of 1000 (max. 500000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 395 compressed objects within 4 object streams
+ 32 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
