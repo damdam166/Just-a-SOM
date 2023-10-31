@@ -54,7 +54,7 @@ It is a neural network of just one layer : the output layer.
 			\begin{figure}[h]
 			
 				\includegraphics[width=0.3\linewidth]{pics/som_example_diapo_1.png}
-				\caption{Reprensation of a SOM (2) of Bibliography.}
+				\caption{Representation of a SOM (2 of Bibliography).}
 			\end{figure}
 		\end{center}
 
@@ -136,9 +136,34 @@ A self-organizing map (SOM) is used to produce a low-dimensional (typically two-
 	
 	\begin{frame}{Convergence}
 		
-		The convergence of the SOM algorithm depends on the dimension of the dataset(1).
+		The convergence of the SOM algorithm is not guaranteed. There are actually 2 errors that can appear.
 
+                     
+		\begin{columns}
+                        
+                        \column{0.5\textwidth}
+                
+                        	\begin{figure}[h]
+                
+                                	\includegraphics[width=0.5\linewidth]{pics/dimension_error.png}
+					\caption{\tiny \textbf{Dimension Error}. 
 
+It happens when the number of neurons does not fit with the data. 
+
+The ideal number of neurons is 5$\sqrt{N}$ where N is the number of data vectors.}
+                        	\end{figure}
+                        
+                        
+                        \column{0.5\textwidth}
+                        
+                        	\begin{figure}[h]
+                                
+                                	\includegraphics[width=0.5\linewidth]{pics/topological_error.png} 
+					\caption{\tiny \textbf{Topological Error}. 
+
+It happens when a node is created. It looks like a butterfly.}             
+                        	\end{figure}
+		\end{columns}
 	\end{frame}
 
 
@@ -175,7 +200,12 @@ A self-organizing map (SOM) is used to produce a low-dimensional (typically two-
 
 	\begin{frame}
 	
-https://www.baeldung.com/cs/som-algorithm
+		\begin{enumerate}
+			
+			\item Self-Organizing Maps - Teuvo Kohonen (2001)
+			\item https://www.baeldung.com/cs/som-algorithm
+			\item http://www.pspc.unige.it/~drivsco/Papers/VanHulle$\textunderscore$Springer.pdf
+		\end{enumerate}
 	\end{frame}
 
 
