@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  1 NOV 2023 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.29)  1 NOV 2023 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,13 +1001,23 @@ Package pdftex.def Info: pics/topologies.png  used on input line 300.
 
  <./pics/topologies.png>] [13
 
-] [14
+]
+LaTeX Font Info:    Trying to load font information for OMS+cmss on input line 
+372.
+LaTeX Font Info:    No file OMScmss.fd. on input line 372.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 372.
+
+[14
 
 ] [15
 
 ]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 396.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 395.
 
 [16
 
@@ -1022,17 +1032,20 @@ LaTeX Warning: Command \textunderscore invalid in math mode on input line 396.
 \openout8 = `diapo.snm'.
 
  (./diapo.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `diapo.out' has not changed.
 (rerunfilecheck)             Checksum: B9606D25781253D0640F213192DAACCD;274.
  ) 
 Here is how much of TeX's memory you used:
- 22059 strings out of 477277
- 427285 string characters out of 5816798
- 1861793 words of memory out of 6000000
- 41689 multiletter control sequences out of 15000+600000
+ 22069 strings out of 477277
+ 427414 string characters out of 5816798
+ 1860793 words of memory out of 6000000
+ 41697 multiletter control sequences out of 15000+600000
  518959 words of font info for 55 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 128i,14n,122p,409b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,14n,122p,409b,914s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texliv
@@ -1045,7 +1058,7 @@ c/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam7.pfb>
-Output written on diapo.pdf (16 pages, 416137 bytes).
+Output written on diapo.pdf (16 pages, 416310 bytes).
 PDF statistics:
  529 PDF objects out of 1000 (max. 8388607)
  457 compressed objects within 5 object streams

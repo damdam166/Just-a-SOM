@@ -124,8 +124,8 @@ Step 3
 
                         \item Initialize the weight vectors (randomly or not) in red.
 			\item \textbf{Competition} : Select a data vector(blue), then chose the closest weight vector(green) to it.
-			\item \textbf{Adaptation} : Update the winner and its neighbors (all green ones).
-                        \item repeat the process till reach max$\textunderscore$iteration
+			\item \textbf{Adaptation} : Update the winner and its neighbors (all green ones). The neighbors share a single link with the winner.
+                        \item repeat the process till reach max$\textunderscore$iteration.
                 \end{enumerate}
         \end{frame}
 
@@ -319,7 +319,7 @@ it is at the instant t :
 			\item $h_{kj}$ is the \textbf{neighborhood} function which smooths the update of the neighbors depending on their proximity with the winner and the iteration t. (see 1 of Bibliography)
 		\end{itemize}
 	
-We can chose the \textbf{Gaussian} function :
+We can choose the \textbf{Gaussian} function :
 
 			\begin{center}
 		
@@ -355,13 +355,13 @@ $\sigma$ is the standard deviation of the Gaussian function (2). It could be a f
 
 							\STATE {
 								
-								\textit{competition}
+								\textbackslash\textbackslash   \textit{competition}
 			
 								\STATE Find the neuron closest to the sample
 								
-								\textit{cooperation and adaptation}
+								\textbackslash\textbackslash   \textit{cooperation and adaptation}
 
-								\STATE Find this neuron and its neighbors
+								\STATE Update this neuron and its neighbors
 							} \ENDFOR
 						 } \ENDFOR
 				
