@@ -2,6 +2,7 @@
 
 
 \usepackage{graphicx}
+\usepackage{amsmath}
 
 
 \author{Damien DELPY}
@@ -228,43 +229,106 @@ It happens when a node is created. It looks like a butterfly.}
 			\begin{column}{0.7\textwidth}
 
 				\begin{block}{Initialisation}
-The weights $w_i$ of neuron connections are randomly initialized.
-			
 
+The weights $m_i$ or $w_i$ of neuron connections are randomly initialized.
 				\end{block}
+
 
 				\begin{block}{Competition}
 		
-				
+Chose randomly an input vector $X_j$. 
+
+Search for the neuron with the closest weight vector from $X_j$.
+
+To realise it, a distance is needed. 
+
+All distances can work, let is choose the \textbf{Euclidean distance}. 
+
+The identity of the \textbf{winner} neuron is : 
+
+					\begin{center}
 		
-				\end{block}
-
-	
-				\begin{block}{Cooperation}
-
-	
-				\end{block}
-
-
-				\begin{block}{Adaptation}
-	
-
+						k = $\arg\limits_{i} \min \| X_j - w_i \|$
+					\end{center}
 				\end{block}
 			\end{column}
 
-			\begin{column}{0.3\textwidth}
+			\begin{column}{0.4\textwidth}
 				
 				\begin{center}
-					\includegraphics[width=1\linewidth]{pics/som_example_diapo_1.png}	
+					
+					\includegraphics[width=1\linewidth]{pics/explanation_phases.png}	
 				\end{center}
 			\end{column}
 		\end{columns}
 	\end{frame}
 
+		
+	\begin{frame}{Cooperation}
+
+To prevent from discontinous adaptation by only modifying the winner neuron, all of its neighbors are also modified.
+
+The number of neighbors depends on the topology.
+		\begin{center}
+			
+			\begin{figure}[h]
+			
+				\includegraphics[width=0.5\linewidth]{pics/topologies.png}
+				\caption{\tiny \textbf{Different topologies possible}.
+
+
+
+A : circular topology;  
+
+B : rectangular topology;  
+
+C : linear topology
+}
+			\end{figure}
+		\end{center}
+		
+
+Here, the grid is the neural network.
+
+Each node of the grid is a neuron.
+
+On the linear topology, each neuron has a maximum number of 2 neighbors.
+
+On the rectangular topology, each neuron has a maximum number of 8 neighbors.
+	\end{frame}
+
+
+	\begin{frame}{Adaptation}
+
+Here is the update of the weight vectors of the winner neuron and its neighbors.
+
+it is at the instant t : 
+
+		\begin{center}
+
+			$w_k$(t + 1) = $w_k$(t) + $\alpha$.$h_{kj}$(t).($X_j$ - $w_k$(t))	
+		\end{center}
+
+		\begin{itemize}
+	
+			\item $X_j$ is the input vector
+			\item $w_k$(t) is the weight vector of the neuron k at the instant t
+			\item $\alpha$ is the \textbf{learning rate}
+			\item $h_{kj}$ is the \textbf{neighborhood} function which smooths the update of the neighbors depending on their proximity with the winner and the iteration t. (see 1 of Bibliography)
+		\end{itemize}
+	
+We can chose the \textbf{Gaussian} function :
+
+			\begin{center}
+		
+				$h_{jk}$ = exp($\frac{-\|w_{winner} - w_k\|^2}{2\sigma^2}$)
+			\end{center}
+	\end{frame}
+
 
 	\begin{frame}{Algorithm}
+			
 		
-	
 
 
 
