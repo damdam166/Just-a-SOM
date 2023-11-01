@@ -15,6 +15,12 @@ int main(int argc, char **argv) {
     double hkjt = gaussian_n_function(1, sd);
 
     printf("%lf\n", hkjt);
-    
+   
+    List_Element *li = new_list(1);
+
+    printf("%lf\n", li->value);
+	
+    clear_list(li);
+
     return 0;
 }

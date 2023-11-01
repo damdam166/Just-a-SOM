@@ -6,7 +6,7 @@
     typedef struct List_Element {
 
         double value;
-        double *next;
+        struct List_Element *next;
     }List_Element, *List;
 
 
