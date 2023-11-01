@@ -44,3 +44,32 @@ Lattice new_lattice(int lines, int rows, int dim, Topology topo) {
 }
 
 
+Bool is_empty_lattice(Lattice la) {
+
+    if (la == NULL) return TRUE;
+
+    return FALSE;
+}
+
+
+
+
+
+
+
+void clear_lattice(Lattice la) {
+
+    if (is_empty_lattice(la)) return ;
+
+    if (la->tab_w_vectors != NULL) {
+
+        for (int i = 0; i < la->rows * la->lines; ++i) {
+
+            if (la->tab_w_vectors[i] != NULL) free(la->tab_w_vectors[i]);
+        }
+
+        free(la->tab_w_vectors);
+    }
+
+    free(la);
+}

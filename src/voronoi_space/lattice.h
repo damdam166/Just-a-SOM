@@ -14,7 +14,7 @@
     }Lattice_Element, *Lattice;
 
     Lattice new_lattice(int lines, int rows, int dim, Topology topo);
-    Bool is_lattice_empty(Lattice la);
+    Bool is_empty_lattice(Lattice la);
 
     void print_lattice(Lattice la);
     void clear_lattice(Lattice la);
