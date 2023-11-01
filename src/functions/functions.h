@@ -12,7 +12,7 @@
     typedef enum {
 
         R, // Rectangular
-        L, // Linear
+        L // Linear
     }Topology;
 
 

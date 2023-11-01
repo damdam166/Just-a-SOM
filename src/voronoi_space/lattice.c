@@ -4,7 +4,7 @@
 #include "lattice.h"
 
 
-Lattice new_lattice(int lines, int rows, int dim, Topology topo) {
+Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Topology topo) {
 
     Lattice_Element *la = (Lattice_Element *)malloc(sizeof(Lattice_Element));
 
