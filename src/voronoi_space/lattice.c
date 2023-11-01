@@ -19,7 +19,7 @@ Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Top
     la->dimension = dim;
     la->topology = topo;
 
-    int number_w_vectors = lines * rows;
+    unsigned int number_w_vectors = lines * rows;
 
     la->tab_w_vectors = (Node **)malloc(number_w_vectors * sizeof(Node *));
 
