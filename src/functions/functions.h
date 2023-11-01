@@ -40,9 +40,15 @@
         norm; \
     })
 
+    #define DIST_1(dimension, x, y) \
+    ({ \
+        double norm = 0; \
+        for (int i = 0; i < (dimension); ++i) \
+            norm += fabs((x)[i] - (y)[i]); \
+        norm; \
+    })
 
 
-    double dist_infinite(unsigned int dimension, const double x[], const double y[]);
     double dist_1(unsigned int dimension, const double x[], const double y[]);
     double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]);
 
