@@ -7,4 +7,9 @@
     double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]);
 
 
+    #define NEIGHBORHOOD_RADIUS 0.01
+    double standard_deviation_function(int t);
+    double gaussian_n_function(double norm_w_k, double standard_deviation);
+
+
 #endif
