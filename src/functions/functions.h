@@ -2,6 +2,15 @@
 #define _FUNCTIONS_H_
 
 
+    typedef enum {
+
+        FALSE, // 0
+        TRUE // 1
+    }Bool;
+
+
+
+
     double dist_2(unsigned int dimension, const double x[], const double y[]);
     double dist_infinite(unsigned int dimension, const double x[], const double y[]);
     double dist_1(unsigned int dimension, const double x[], const double y[]);

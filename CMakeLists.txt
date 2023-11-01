@@ -14,4 +14,5 @@ add_executable(Just_a_SOM
         src/compiling.sh
         src/main.c
         LICENSE
-        README.md)
+        README.md
+        src/make_a_list/list.c)
