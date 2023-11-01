@@ -24,20 +24,6 @@ char *find_topo(Topology topo) {
 
 
 
-
-// Distances
-
-
-double dist_1(unsigned int dimension, const double x[], const double y[]) {
-
-    double norm = 0;
-
-    for (int i = 0; i < dimension; ++i) norm += fabs( x[i] - y[i] );
-
-    return norm;
-}
-
-
 double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]) {
 
 

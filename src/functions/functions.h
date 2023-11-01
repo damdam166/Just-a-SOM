@@ -1,6 +1,7 @@
 #ifndef _FUNCTIONS_H_
 #define _FUNCTIONS_H_
 
+
     #include <math.h>
 
 
@@ -48,9 +49,24 @@
         norm; \
     })
 
-
-    double dist_1(unsigned int dimension, const double x[], const double y[]);
-    double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]);
+    #define ZERO 0
+    #define DIST_P(p, dimension, x, y) \
+    ({ \
+        if ((p) == ZERO) { \
+            fprintf(stderr, "p == 0.\n"); \
+            exit(1); \
+        }\
+        double norm = 0; \
+        if ((p) == 1) { \
+            for (int i = 0; i < (dimension); ++i) \
+                norm += fabs((x)[i] - (y)[i]); \
+        } else { \
+            for (int i = 0; i < (dimension); ++i) \
+                norm += pow(fabs((x)[i] - (y)[i]), (p)); \
+            norm = pow(norm, 1.0 / (p)); \
+        }\
+        norm; \
+    })
 
 
     // Neighborhood function
