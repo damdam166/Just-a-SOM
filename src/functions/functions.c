@@ -5,6 +5,8 @@
 #include "functions.h"
 
 
+
+
 // Distances
 double dist_2(unsigned int dimension, const double x[], const double y[]) {
 
@@ -30,6 +32,7 @@ double dist_infinite(unsigned int dimension, const double x[], const double y[])
     return norm;
 }
 
+
 double dist_1(unsigned int dimension, const double x[], const double y[]) {
 
     double norm = 0;
@@ -38,6 +41,7 @@ double dist_1(unsigned int dimension, const double x[], const double y[]) {
 
     return norm;
 }
+
 
 double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]) {
 
@@ -61,6 +65,8 @@ double dist_p(unsigned int p, unsigned int dimension, const double x[], const do
 
     return norm;
 }
+
+
 
 
 // Neighborhood function
