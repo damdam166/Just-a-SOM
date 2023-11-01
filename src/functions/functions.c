@@ -82,3 +82,14 @@ double gaussian_n_function(double norm_w_k, double standard_deviation) {
 
     return exp(- norm_w_k * norm_w_k / (2 * standard_deviation * standard_deviation) );
 }
+
+
+
+
+// Learning rate function
+double learning_rate_function(int t) {
+
+    return exp(- LEARNING_RATE_PARAMETER * t);
+}
+
+
