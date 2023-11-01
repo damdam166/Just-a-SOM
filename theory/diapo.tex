@@ -326,13 +326,50 @@ We can chose the \textbf{Gaussian} function :
 				$h_{jk}$ = exp($\frac{-\|w_{winner} - w_k\|^2}{2\sigma^2}$)
 			\end{center}
 		
-$\sigma$ is the standard deviation of the Gaussian function (2). It could a function which decreases with t.
+$\sigma$ is the standard deviation of the Gaussian function (2). It could be a function which decreases with t.
 	\end{frame}
 
 
 	\begin{frame}{Algorithm}
+
+		\begin{columns}
+
+			\column{0.6\textwidth}
+
+				\begin{algorithm}[H]
 			
-		
+					\caption{Self-Organizing Map Algorithm}
+					\begin{algorithmic}[1]		
+					
+						\REQUIRE input data \textbf{X}; maximum number of iterations \textbf{IMAX}; the neighborhood function \textbf{h}; lattice dimensions \textbf{k}x\textbf{l}
+			
+						\ENSURE the weight vectors \textbf{W}
+						
+						\STATE Randomly initialize weight vectors $w_i$	
+									
+						 \FOR{t $\leftarrow$ 1 \textbf{to} IMAX} 
+
+						 \STATE {
+
+							 \FOR{sample \textbf{in} X}
+
+							\STATE {
+								
+								\textit{competition}
+			
+								\STATE Find the neuron closest to the sample
+								
+								\textit{cooperation and adaptation}
+
+								\STATE Find this neuron and its neighbors
+							} \ENDFOR
+						 } \ENDFOR
+				
+
+						\RETURN W
+					\end{algorithmic}
+				\end{algorithm}
+		\end{columns}
 	\end{frame}
 	
 
