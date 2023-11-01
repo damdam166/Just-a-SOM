@@ -4,14 +4,19 @@
     #include "../functions/functions.h"
 
 
-    typedef struct Weight_Vectors_Element {
+    typedef struct Lattice_Element {
 
-        int nb_w_vectors;
+        int lines;
+        int rows;
         int dimension;
+        Topology topology;
         double **tab_w_vectors;
-    }Weight_Vectors_Element, *Weight_Vectors;
+    }Lattice_Element, *Lattice;
 
+    Lattice new_lattice(int lines, int rows, int dim, Topology topo);
+    Bool is_lattice_empty(Lattice la);
 
-
+    void print_lattice(Lattice la);
+    void clear_lattice(Lattice la);
 
 #endif

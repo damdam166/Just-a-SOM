@@ -9,6 +9,12 @@
     }Bool;
 
 
+    typedef enum {
+
+        R, // Rectangular
+        L, // Linear
+    }Topology;
+
 
 
     double dist_2(unsigned int dimension, const double x[], const double y[]);
