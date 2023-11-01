@@ -19,9 +19,26 @@ Lattice new_lattice(int lines, int rows, int dim, Topology topo) {
     la->dimension = dim;
     la->topology = topo;
 
+    int number_w_vectors = lines * rows;
 
+    la->tab_w_vectors = (double **)malloc(number_w_vectors * sizeof(double *));
 
+    if (la->tab_w_vectors == NULL) {
 
+        fprintf(stderr, "Dynamic Allocation Error.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    for (int i = 0; i < number_w_vectors; ++i) {
+
+        la->tab_w_vectors[i] = (double *)malloc(dim * sizeof(double));
+
+        if (la->tab_w_vectors[i] == NULL) {
+
+            fprintf(stderr, "Dynamic Allocation Error.\n");
+            exit(EXIT_FAILURE);
+        }
+    }
 
     return la;
 }
