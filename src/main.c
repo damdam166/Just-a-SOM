@@ -8,11 +8,13 @@
 
 int main(int argc, char **argv) {
 
-    double x[] = {1, 2}, y[] = {2, 1};
+    double sd = standard_deviation_function(10);
+		
+    printf("%lf\n", sd);
 
-    double norm = dist_p(11, 2, x, y);
-    printf("%lf\n", norm);
+    double hkjt = gaussian_n_function(1, sd);
 
-    printf("Hello World !\n");
+    printf("%lf\n", hkjt);
+    
     return 0;
 }
