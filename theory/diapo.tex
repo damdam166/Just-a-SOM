@@ -120,8 +120,8 @@ Step 3
                	\begin{enumerate}
 
                         \item Initialize the weight vectors (randomly or not) in red.
-                        \item Select a data vector(blue), then chose the closest weight vector(green) to it.
-                        \item Update the winner and its neighbors (all green ones).
+			\item \textbf{Competition} : Select a data vector(blue), then chose the closest weight vector(green) to it.
+			\item \textbf{Adaptation} : Update the winner and its neighbors (all green ones).
                         \item repeat the process till reach max$\textunderscore$iteration
                 \end{enumerate}
         \end{frame}
@@ -222,23 +222,43 @@ It happens when a node is created. It looks like a butterfly.}
 
 
 	\begin{frame}{Different Phases}
-	
-		\begin{block}{Competition}
+
+		\begin{columns}
+
+			\begin{column}{0.7\textwidth}
+
+				\begin{block}{Initialisation}
+The weights $w_i$ of neuron connections are randomly initialized.
+			
+
+				\end{block}
+
+				\begin{block}{Competition}
 		
+				
 		
-		\end{block}
+				\end{block}
 
 	
-		\begin{block}{Cooperation}
+				\begin{block}{Cooperation}
 
 	
-		\end{block}
+				\end{block}
 
 
-		\begin{block}{Adaptation}
+				\begin{block}{Adaptation}
 	
 
-		\end{block}
+				\end{block}
+			\end{column}
+
+			\begin{column}{0.3\textwidth}
+				
+				\begin{center}
+					\includegraphics[width=1\linewidth]{pics/som_example_diapo_1.png}	
+				\end{center}
+			\end{column}
+		\end{columns}
 	\end{frame}
 
 
