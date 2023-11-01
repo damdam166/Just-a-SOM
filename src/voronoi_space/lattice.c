@@ -21,7 +21,7 @@ Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Top
 
     int number_w_vectors = lines * rows;
 
-    la->tab_w_vectors = (double **)malloc(number_w_vectors * sizeof(double *));
+    la->tab_w_vectors = (Node **)malloc(number_w_vectors * sizeof(Node *));
 
     if (la->tab_w_vectors == NULL) {
 
@@ -31,7 +31,7 @@ Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Top
 
     for (int i = 0; i < number_w_vectors; ++i) {
 
-        la->tab_w_vectors[i] = (double *)malloc(dim * sizeof(double));
+        la->tab_w_vectors[i] = (Node *)malloc(dim * sizeof(Node));
 
         if (la->tab_w_vectors[i] == NULL) {
 
@@ -50,9 +50,6 @@ Bool is_empty_lattice(Lattice la) {
 
     return FALSE;
 }
-
-
-
 
 
 void print_lattice(Lattice la) {
