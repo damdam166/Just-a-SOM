@@ -15,4 +15,4 @@ add_executable(Just_a_SOM
         src/main.c
         LICENSE
         README.md
-        src/make_a_list/list.c)
+        )
