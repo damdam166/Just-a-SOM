@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
 		
     printf("%lf\n", sd);
 
-    double hkjt = gaussian_n_function(1, sd);
+    double hkjt = GAUSSIAN_N_FUNCTION(1, sd);
 
     printf("%lf\n", hkjt);
   	

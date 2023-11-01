@@ -61,7 +61,6 @@ void print_lattice(Lattice la) {
     printf("Dimension of vectors : %d\n\n", la->dimension);
 
     printf("The topology is : %s\n\n", find_topo(la->topology));
-
 }
 
 

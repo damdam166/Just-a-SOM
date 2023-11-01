@@ -22,6 +22,7 @@
 
     Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Topology topo);
     Bool is_empty_lattice(Lattice la);
+    void print_lattice(Lattice la);
     void clear_lattice(Lattice la);
 
 
