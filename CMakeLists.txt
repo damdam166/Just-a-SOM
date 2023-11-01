@@ -15,4 +15,6 @@ add_executable(Just_a_SOM
         src/main.c
         LICENSE
         README.md
-        )
+        src/voronoi_space/lattice.c
+        src/voronoi_space/lattice.h
+)
