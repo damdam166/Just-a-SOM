@@ -18,6 +18,8 @@ int main(int argc, char **argv) {
   	
     Lattice_Element *la = new_lattice(10, 10, 2, 0);
 
+    print_lattice(la);
+
     clear_lattice(la);
 
     return 0;

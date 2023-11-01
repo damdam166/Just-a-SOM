@@ -55,6 +55,17 @@ Bool is_empty_lattice(Lattice la) {
 
 
 
+void print_lattice(Lattice la) {
+
+    if (is_empty_lattice(la)) return ;
+
+    printf("Dimension of the lattice : %d x %d = %d \n\n", la->lines, la->rows, la->lines * la->rows);
+
+    printf("Dimension of vectors : %d\n\n", la->dimension);
+
+    printf("The topology is : %s\n\n", find_topo(la->topology));
+
+}
 
 
 void clear_lattice(Lattice la) {

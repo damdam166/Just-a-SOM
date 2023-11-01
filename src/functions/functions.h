@@ -16,6 +16,8 @@
     }Topology;
 
 
+    char *find_topo(Topology topo);
+
 
     double dist_2(unsigned int dimension, const double x[], const double y[]);
     double dist_infinite(unsigned int dimension, const double x[], const double y[]);
