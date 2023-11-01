@@ -85,14 +85,3 @@ double dist_p(unsigned int p, unsigned int dimension, const double x[], const do
 }
 
 
-
-
-// Neighborhood function
-double gaussian_n_function(double norm_w_k, double standard_deviation) {
-
-
-
-    return exp(- norm_w_k * norm_w_k / (2 * standard_deviation * standard_deviation) );
-}
-
-

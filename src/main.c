@@ -11,6 +11,12 @@ int main(int argc, char **argv) {
     double sd = STANDARD_DEVIATION_FUNCTION(10);
 		
     printf("%lf\n", sd);
+	
+    double x[] = {1, 2}, y[] = {2, 1};
+
+    double d_2 = DIST_2(2, x, y);
+
+    printf("%lf\n", d_2);
 
     double hkjt = GAUSSIAN_N_FUNCTION(1, sd);
 

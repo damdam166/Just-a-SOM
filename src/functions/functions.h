@@ -21,6 +21,14 @@
     char *find_topo(Topology topo);
 
 
+    #define DIST_2(dimension, x, y) \
+    ({ \
+        double norm = 0; \
+        for (int i = 0; i < (dimension); ++i) \
+            norm += pow((x)[i] - (y)[i], 2); \
+        sqrt(norm); \
+    })
+
     double dist_2(unsigned int dimension, const double x[], const double y[]);
     double dist_infinite(unsigned int dimension, const double x[], const double y[]);
     double dist_1(unsigned int dimension, const double x[], const double y[]);
@@ -29,13 +37,11 @@
 
     // Neighborhood function
     #define NEIGHBORHOOD_RADIUS 0.01
-    #define STANDARD_DEVIATION_FUNCTION(t) exp( ( - (NEIGHBORHOOD_RADIUS) * (double)(t)) )
+    #define STANDARD_DEVIATION_FUNCTION(t) exp( - (NEIGHBORHOOD_RADIUS) * (double)(t) )
 
     // norm_w_k is the norm between the winner and the neighbor number k
     #define GAUSSIAN_N_FUNCTION(norm_w_k, standard_deviation) \
-    exp( ( - (double)(norm_w_k) * (double)(norm_w_k) ) / ( 2 * ( (double)(standard_deviation) * (double)(standard_deviation) ) ) )
-
-    double gaussian_n_function(double norm_w_k, double standard_deviation);
+    exp( - (double)(norm_w_k) * (double)(norm_w_k) / ( 2 * (double)(standard_deviation) * (double)(standard_deviation) ) )
 
 
     // Learning rate function
