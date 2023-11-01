@@ -88,12 +88,6 @@ double dist_p(unsigned int p, unsigned int dimension, const double x[], const do
 
 
 // Neighborhood function
-double standard_deviation_function(int t) {
-
-    return exp(- NEIGHBORHOOD_RADIUS * t);
-}
-
-
 double gaussian_n_function(double norm_w_k, double standard_deviation) {
 
     // norm_w_k is the norm between the winner and the neighbor number k
@@ -103,11 +97,5 @@ double gaussian_n_function(double norm_w_k, double standard_deviation) {
 
 
 
-
-// Learning rate function
-double learning_rate_function(int t) {
-
-    return exp(- LEARNING_RATE_PARAMETER * t);
-}
 
 

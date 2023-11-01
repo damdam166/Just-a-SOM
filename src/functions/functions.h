@@ -1,6 +1,8 @@
 #ifndef _FUNCTIONS_H_
 #define _FUNCTIONS_H_
 
+    #include <math.h>
+
 
     typedef enum {
 
@@ -25,13 +27,18 @@
     double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]);
 
 
+    // Neighborhood function
     #define NEIGHBORHOOD_RADIUS 0.01
-    double standard_deviation_function(int t);
+    #define STANDARD_DEVIATION_FUNCTION(t) exp( (- (NEIGHBORHOOD_RADIUS) * (double)(t)) )
+
+
+
     double gaussian_n_function(double norm_w_k, double standard_deviation);
 
 
+    // Learning rate function
     #define LEARNING_RATE_PARAMETER 0.001
-    double learning_rate_function(int t);
+    #define LEARNING_RATE_FUNCTION(t) exp( (- (LEARNING_RATE_PARAMETER) * (double)(t)) )
 
 
 #endif

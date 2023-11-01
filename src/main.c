@@ -8,7 +8,7 @@
 
 int main(int argc, char **argv) {
 
-    double sd = standard_deviation_function(10);
+    double sd = STANDARD_DEVIATION_FUNCTION(10);
 		
     printf("%lf\n", sd);
 
