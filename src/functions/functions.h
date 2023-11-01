@@ -21,6 +21,7 @@
     char *find_topo(Topology topo);
 
 
+    // Distances
     #define DIST_2(dimension, x, y) \
     ({ \
         double norm = 0; \
@@ -29,7 +30,18 @@
         sqrt(norm); \
     })
 
-    double dist_2(unsigned int dimension, const double x[], const double y[]);
+    #define DIST_INFINITE(dimension, x, y) \
+    ({                                     \
+        double norm = 0; \
+        for (int i = 0; i < (dimension); ++i) { \
+            double norm_temp = fabs((x)[i] - (y)[i]); \
+            if (norm < norm_temp) norm = norm_temp; \
+        }\
+        norm; \
+    })
+
+
+
     double dist_infinite(unsigned int dimension, const double x[], const double y[]);
     double dist_1(unsigned int dimension, const double x[], const double y[]);
     double dist_p(unsigned int p, unsigned int dimension, const double x[], const double y[]);
