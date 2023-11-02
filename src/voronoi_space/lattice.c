@@ -52,6 +52,16 @@ Bool is_empty_lattice(Lattice la) {
 }
 
 
+Lattice initialize_weights(Lattice la, Node tab_min, Node tab_max) {
+
+
+
+
+
+    return la;
+}
+
+
 void print_lattice(Lattice la) {
 
     if (is_empty_lattice(la)) return ;

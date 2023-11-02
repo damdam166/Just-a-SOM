@@ -28,5 +28,9 @@ int main(int argc, char **argv) {
 
     clear_lattice(la);
 
+    double rd = RANDOM_VALUE_FUNCTION(1.3, 1.8);
+			
+    printf("%lf\n", rd);
+
     return 0;
 }

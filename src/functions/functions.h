@@ -3,6 +3,7 @@
 
 
     #include <math.h>
+    #include <time.h>
 
 
     typedef enum {
@@ -81,6 +82,14 @@
     // Learning rate function
     #define LEARNING_RATE_PARAMETER 0.001
     #define LEARNING_RATE_FUNCTION(t) exp( ( - (LEARNING_RATE_PARAMETER) * (double)(t)) )
+
+
+    // Find a random value between a min and a max
+    #define RANDOM_VALUE_FUNCTION(min, max) \
+    ({ \
+        double value = (double)rand() / RAND_MAX; \
+        ( value * ( (max) - (min) ) ) + (min); \
+    })
 
 
 #endif
