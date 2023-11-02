@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 #include "functions/functions.h"
@@ -27,6 +28,9 @@ int main(int argc, char **argv) {
     print_lattice(la);
 
     clear_lattice(la);
+	
+    
+    srand(time(NULL));
 
     double rd = RANDOM_VALUE_FUNCTION(1.3, 1.8);
 			
