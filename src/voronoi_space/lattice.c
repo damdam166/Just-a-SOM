@@ -57,8 +57,6 @@ Lattice initialize_weights(Lattice la, Node tab_min, Node tab_max) {
     // need to use for the randomization srand(time(NULL));
 
 
-
-
     return la;
 }
 
