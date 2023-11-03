@@ -4,13 +4,24 @@
     #include "../functions/functions.h"
 
 
+    typedef struct Node_Element {
+
+        int left_n; // Neighbor from left
+        int up_n; // Neighbor from up
+        int right_n; // Neighbor from right
+        int bottom_n;
+
+        double *vector;
+    }Node_Element, *Node;
+
+
     typedef struct Lattice_Element {
 
         unsigned int lines;
         unsigned int rows;
         unsigned int dimension;
         Topology topology;
-        double **tab_w_vectors;
+        Node_Element *tab_w_vectors;
     }Lattice_Element, *Lattice;
 
 

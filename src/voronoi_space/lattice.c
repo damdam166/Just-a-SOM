@@ -21,7 +21,7 @@ Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Top
 
     unsigned int number_w_vectors = lines * rows;
 
-    la->tab_w_vectors = (double **)malloc(number_w_vectors * sizeof(double *));
+    la->tab_w_vectors = (Node_Element *)malloc(number_w_vectors * sizeof(Node_Element));
 
     if (la->tab_w_vectors == NULL) {
 
@@ -31,9 +31,9 @@ Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Top
 
     for (int i = 0; i < number_w_vectors; ++i) {
 
-        la->tab_w_vectors[i] = (double *)malloc(dim * sizeof(double ));
+        la->tab_w_vectors[i].vector = (double *)malloc(dim * sizeof(double));
 
-        if (la->tab_w_vectors[i] == NULL) {
+        if (la->tab_w_vectors[i].vector == NULL) {
 
             fprintf(stderr, "Dynamic Allocation Error.\n");
             exit(EXIT_FAILURE);
@@ -59,7 +59,7 @@ Lattice initialize_weights(Lattice la, double *tab_min, double *tab_max) {
 
         for (int i_dim = 0; i_dim < la->dimension; ++i_dim) {
 
-            la->tab_w_vectors[i_w][i_dim] = RANDOM_VALUE_FUNCTION(tab_min[i_dim], tab_max[i_dim]);
+            la->tab_w_vectors[i_w].vector[i_dim] = RANDOM_VALUE_FUNCTION(tab_min[i_dim], tab_max[i_dim]);
         }
     }
 
@@ -87,7 +87,7 @@ void clear_lattice(Lattice la) {
 
         for (int i = 0; i < la->rows * la->lines; ++i) {
 
-            if (la->tab_w_vectors[i] != NULL) free(la->tab_w_vectors[i]);
+            if (la->tab_w_vectors[i].vector != NULL) free(la->tab_w_vectors[i].vector);
         }
 
         free(la->tab_w_vectors);
