@@ -16,7 +16,7 @@
         unsigned int rows;
         unsigned int dimension;
         Topology topology;
-        Node **tab_w_vectors;
+        Node *tab_w_vectors;
     }Lattice_Element, *Lattice;
 
 
