@@ -17,4 +17,6 @@ add_executable(Just_a_SOM
         README.md
         src/voronoi_space/lattice.c
         src/voronoi_space/lattice.h
+        src/neighborhood/neighborhood.c
+        src/neighborhood/neighborhood.h
 )
