@@ -38,6 +38,10 @@ int main(int argc, char **argv) {
 
 
     print_lattice(la);
+	
+    int ind_winner = find_winner(2, la, tab_min);
+
+    printf("%d\n\n", ind_winner);
 
     clear_lattice(la);
 
