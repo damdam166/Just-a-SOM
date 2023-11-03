@@ -11,6 +11,7 @@
     // Adaptation
     void update_single_node(unsigned int dimension, double learning_rate, double standard_deviation, unsigned int p, Node pt_nd, Node pt_winner, double *x);
     void update_for_one_iteration(unsigned int iteration, unsigned int p, Lattice la, double *x);
+    void update_for_all_iterations(unsigned int p, unsigned int nb_input_data_vectors, unsigned int max_iterations, Lattice la, double **X); // X is the input data
 
 
 #endif

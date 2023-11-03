@@ -73,3 +73,20 @@ void update_for_one_iteration(unsigned int iteration, unsigned int p, Lattice la
         // For the neighbor of the bottom
     if (la->tab_w_vectors[ind_winner].bottom_n != -1) update_single_node(la->dimension, learning_rate, standard_deviation, p, &la->tab_w_vectors[la->tab_w_vectors[ind_winner].bottom_n], &la->tab_w_vectors[ind_winner], x);
 }
+
+
+void update_for_all_iteration(unsigned int p, unsigned int nb_input_data_vectors, unsigned int max_iterations, Lattice la, double **X) {
+
+    if (is_empty_lattice(la)) return ;
+
+    for (unsigned int i_iter = 0; i_iter < max_iterations; ++i_iter) {
+
+        // Find a random input data vector
+        int random_ind_input_data_vector = RANDOM_VALUE_FUNCTION(0, nb_input_data_vectors - 1);
+
+        // Update
+        update_for_one_iteration(i_iter, p, la, X[random_ind_input_data_vector]);
+    }
+}
+
+
