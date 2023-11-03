@@ -9,7 +9,8 @@
 
 
     // Adaptation
-    void update_single_node(Node pt_nd, int ind_vector, int winner, double learning_rate, double standard_deviation);
+    void update_single_node(int dimension, double learning_rate, double standard_deviation, int p, Node pt_nd, Node pt_winner, double *X);
+    void update_for_one_iteration(Lattice la, int iteration);
 
 
 #endif
