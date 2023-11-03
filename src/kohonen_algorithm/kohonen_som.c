@@ -14,7 +14,7 @@ int find_winner(unsigned int p, Lattice la, double *x) {
 
     for (int i_w = 1; i_w < la->lines * la->rows; ++i_w) {
 
-        if (DIST_P(p, la->dimension, la->tab_w_vectors[i_w].vector, x) <= norm_temp) ind_temp = i_w;
+        if (DIST_P(p, la->dimension, la->tab_w_vectors[i_w].vector, x) < norm_temp) ind_temp = i_w;
     }
 
     return ind_temp;
