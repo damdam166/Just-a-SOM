@@ -6,7 +6,7 @@
 
     typedef struct Node_Element {
 
-        double *w_vector;
+        double w_vector;
     }Node_Element, *Node;
 
 
@@ -22,7 +22,7 @@
 
     Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Topology topo);
     Bool is_empty_lattice(Lattice la);
-    Lattice initialize_weights(Lattice la, Node tab_min, Node tab_max);
+    Lattice initialize_weights(Lattice la, Node_Element *tab_min, Node_Element *tab_max);
     void print_lattice(Lattice la);
     void clear_lattice(Lattice la);
 

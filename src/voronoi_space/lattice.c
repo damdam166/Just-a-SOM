@@ -52,12 +52,16 @@ Bool is_empty_lattice(Lattice la) {
 }
 
 
-Lattice initialize_weights(Lattice la, Node tab_min, Node tab_max) {
+Lattice initialize_weights(Lattice la, Node_Element *tab_min, Node_Element *tab_max) {
 
     // need to use for the randomization srand(time(NULL));
+    for (int i_w = 0; i_w < la->lines * la->rows; ++i_w) {
 
+        for (int i_dim = 0; i_dim < la->dimension; ++i_dim) {
 
-
+            la->tab_w_vectors[i_w][i_dim].w_vector = RANDOM_VALUE_FUNCTION(tab_min[i_dim].w_vector, tab_max[i_dim].w_vector);
+        }
+    }
 
     return la;
 }
