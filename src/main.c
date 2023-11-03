@@ -44,8 +44,9 @@ int main(int argc, char **argv) {
     printf("%d\n\n", ind_winner);
 
 
-    update_for_one_iteration(1, 2, la, tab_min);
+    double *X[] = {tab_min, tab_max};
 
+    update_for_all_iterations(2, 2, 10, la, X);
 
 
     clear_lattice(la);

@@ -24,3 +24,5 @@ void print_node(Node_Element nd, int dim) {
     printf("The neighbor from the right is : %d\n", nd.right_n);
     printf("The neighbor from the bottom is : %d\n", nd.bottom_n);
 }
+
+

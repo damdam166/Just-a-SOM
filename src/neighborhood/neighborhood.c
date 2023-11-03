@@ -59,3 +59,5 @@ Bool are_vectors_neighbors(Lattice la, int ind_vector_1, int ind_vector_2) {
 
     return FALSE;
 }
+
+

@@ -75,7 +75,7 @@ void update_for_one_iteration(unsigned int iteration, unsigned int p, Lattice la
 }
 
 
-void update_for_all_iteration(unsigned int p, unsigned int nb_input_data_vectors, unsigned int max_iterations, Lattice la, double **X) {
+void update_for_all_iterations(unsigned int p, unsigned int nb_input_data_vectors, unsigned int max_iterations, Lattice la, double **X) {
 
     if (is_empty_lattice(la)) return ;
 
