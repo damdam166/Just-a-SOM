@@ -27,14 +27,17 @@ int main(int argc, char **argv) {
 	
     print_lattice(la);
 
-    clear_lattice(la);
-	
-    
+    double tab_min[10] = {-1};
+    double tab_max[10] = {1};
+
     srand(time(NULL));
 
-    double rd = RANDOM_VALUE_FUNCTION(1.3, 1.8);
-			
-    printf("%lf\n", rd);
+    la = initialize_weights(la, tab_min, tab_max);
+
+
+
+
+    clear_lattice(la);
 
     return 0;
 }
