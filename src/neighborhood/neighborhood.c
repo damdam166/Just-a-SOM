@@ -6,7 +6,7 @@
 
 
 // To initialize the neighborhood
-void find_neighbors_for_one_vector(Lattice la, int ind_vector) {
+void initialize_neighbors_for_one_vector(Lattice la, int ind_vector) {
 
     if (is_empty_lattice(la)) return ;
 
@@ -36,11 +36,11 @@ void find_neighbors_for_one_vector(Lattice la, int ind_vector) {
 }
 
 
-void find_neighbors_for_all_vectors(Lattice la) {
+void initialize_neighbors_for_all_vectors(Lattice la) {
 
     if (is_empty_lattice(la)) return ;
 
-    for (int i_w = 0; i_w < la->rows * la->lines; ++i_w) find_neighbors_for_one_vector(la, i_w);
+    for (int i_w = 0; i_w < la->rows * la->lines; ++i_w) initialize_neighbors_for_one_vector(la, i_w);
 }
 
 

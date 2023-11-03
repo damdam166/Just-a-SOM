@@ -66,7 +66,7 @@ Lattice initialize_weights(Lattice la, double *tab_min, double *tab_max) {
     }
 
     // Initialize the neighborhood of each vectors
-    find_neighbors_for_all_vectors(la);
+    initialize_neighbors_for_all_vectors(la);
 
     return la;
 }
