@@ -21,7 +21,7 @@ Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Top
 
     unsigned int number_w_vectors = lines * rows;
 
-    la->tab_w_vectors = (Node *)malloc(number_w_vectors * sizeof(Node));
+    la->tab_w_vectors = (double **)malloc(number_w_vectors * sizeof(double *));
 
     if (la->tab_w_vectors == NULL) {
 
@@ -31,7 +31,7 @@ Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Top
 
     for (int i = 0; i < number_w_vectors; ++i) {
 
-        la->tab_w_vectors[i] = (Node)malloc(dim * sizeof(Node));
+        la->tab_w_vectors[i] = (double *)malloc(dim * sizeof(double ));
 
         if (la->tab_w_vectors[i] == NULL) {
 
@@ -52,14 +52,14 @@ Bool is_empty_lattice(Lattice la) {
 }
 
 
-Lattice initialize_weights(Lattice la, Node_Element *tab_min, Node_Element *tab_max) {
+Lattice initialize_weights(Lattice la, double *tab_min, double *tab_max) {
 
     // need to use for the randomization srand(time(NULL));
     for (int i_w = 0; i_w < la->lines * la->rows; ++i_w) {
 
         for (int i_dim = 0; i_dim < la->dimension; ++i_dim) {
 
-            la->tab_w_vectors[i_w][i_dim].w_vector = RANDOM_VALUE_FUNCTION(tab_min[i_dim].w_vector, tab_max[i_dim].w_vector);
+            la->tab_w_vectors[i_w][i_dim] = RANDOM_VALUE_FUNCTION(tab_min[i_dim], tab_max[i_dim]);
         }
     }
 
