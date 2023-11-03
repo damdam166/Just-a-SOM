@@ -188,12 +188,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/neighborhood/neighborhood.c",
+			"path" : "src/node/node.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/neighborhood/neighborhood.h",
+			"path" : "src/node/node.h",
 			"sourceGroupIndex" : 1
 		}
 	],

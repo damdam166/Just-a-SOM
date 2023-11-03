@@ -1,18 +1,7 @@
 #ifndef _LATTICE_H_
 #define _LATTICE_H_
 
-    #include "../functions/functions.h"
-
-
-    typedef struct Node_Element {
-
-        int left_n; // Neighbor from left
-        int up_n; // Neighbor from up
-        int right_n; // Neighbor from right
-        int bottom_n;
-
-        double *vector;
-    }Node_Element, *Node;
+    #include "../node/node.h"
 
 
     typedef struct Lattice_Element {

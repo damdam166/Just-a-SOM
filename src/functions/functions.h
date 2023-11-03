@@ -92,4 +92,12 @@
     })
 
 
+    // To print a vector
+    #define PRINT_VECTOR(tab, dim) ({ \
+        for (int i = 0; i < (dim); ++i) \
+            printf("(%lf) ", (tab)[i]); \
+        printf("\n"); \
+    })
+
+
 #endif

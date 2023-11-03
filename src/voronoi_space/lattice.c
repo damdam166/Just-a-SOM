@@ -76,11 +76,20 @@ void print_lattice(Lattice la) {
 
     if (is_empty_lattice(la)) return ;
 
-    printf("Dimension of the lattice : %d x %d = %d \n\n", la->lines, la->rows, la->lines * la->rows);
+    int size_map = la->rows * la->lines;
+
+    printf("Dimension of the lattice : %d x %d = %d \n\n", la->lines, la->rows, size_map);
 
     printf("Dimension of vectors : %d\n\n", la->dimension);
 
     printf("The topology is : %s\n\n", find_topo(la->topology));
+
+    for (int i = 0; i < size_map; ++i) {
+
+        printf("Node number %d: \n", i);
+        print_node(la->tab_w_vectors[i], la->dimension);
+        printf("\n\n");
+    }
 }
 
 

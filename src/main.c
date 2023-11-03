@@ -24,18 +24,21 @@ int main(int argc, char **argv) {
     printf("%lf\n", hkjt);
   	
     Lattice_Element *la = new_lattice(10, 10, 2, 0);
-	
-    print_lattice(la);
 
-    double tab_min[10] = {-1};
+    double tab_min[10] = {};
+
+    for (int i = 0; i < 10; ++i) tab_min[i] = -1;
+
     double tab_max[10] = {1};
 
-    srand(time(NULL));
+    for (int i = 0; i < 10; ++i) tab_max[i] = 1;
 
+    srand(time(NULL));
+	
     la = initialize_weights(la, tab_min, tab_max);
 
 
-
+    print_lattice(la);
 
     clear_lattice(la);
 
