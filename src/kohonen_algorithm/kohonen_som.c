@@ -39,7 +39,7 @@ void update_single_node(unsigned int dimension, double learning_rate, double sta
     // Update by component
     for (int i_dim = 0; i_dim < dimension; ++i_dim)
 
-        pt_nd->vector[i_dim] += delta * (x[i_dim] - pt_nd->vector[i_dim] );
+        pt_nd->vector[i_dim] += delta * ( x[i_dim] - pt_nd->vector[i_dim] );
 }
 
 
