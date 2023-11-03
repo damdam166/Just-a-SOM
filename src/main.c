@@ -43,6 +43,11 @@ int main(int argc, char **argv) {
 
     printf("%d\n\n", ind_winner);
 
+
+    update_for_one_iteration(1, 2, la, tab_min);
+
+
+
     clear_lattice(la);
 
     return 0;

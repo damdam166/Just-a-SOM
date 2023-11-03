@@ -65,11 +65,11 @@ void update_for_one_iteration(unsigned int iteration, unsigned int p, Lattice la
     if (la->tab_w_vectors[ind_winner].left_n != -1) update_single_node(la->dimension, learning_rate, standard_deviation, p, &la->tab_w_vectors[la->tab_w_vectors[ind_winner].left_n], &la->tab_w_vectors[ind_winner], x);
 
         // For the neighbor of up
-    if (la->tab_w_vectors[ind_winner].left_n != -1) update_single_node(la->dimension, learning_rate, standard_deviation, p, &la->tab_w_vectors[la->tab_w_vectors[ind_winner].up_n], &la->tab_w_vectors[ind_winner], x);
+    if (la->tab_w_vectors[ind_winner].up_n != -1) update_single_node(la->dimension, learning_rate, standard_deviation, p, &la->tab_w_vectors[la->tab_w_vectors[ind_winner].up_n], &la->tab_w_vectors[ind_winner], x);
 
         // For the neighbor of the right
-    if (la->tab_w_vectors[ind_winner].left_n != -1) update_single_node(la->dimension, learning_rate, standard_deviation, p, &la->tab_w_vectors[la->tab_w_vectors[ind_winner].right_n], &la->tab_w_vectors[ind_winner], x);
+    if (la->tab_w_vectors[ind_winner].right_n != -1) update_single_node(la->dimension, learning_rate, standard_deviation, p, &la->tab_w_vectors[la->tab_w_vectors[ind_winner].right_n], &la->tab_w_vectors[ind_winner], x);
 
         // For the neighbor of the bottom
-    if (la->tab_w_vectors[ind_winner].left_n != -1) update_single_node(la->dimension, learning_rate, standard_deviation, p, &la->tab_w_vectors[la->tab_w_vectors[ind_winner].bottom_n], &la->tab_w_vectors[ind_winner], x);
+    if (la->tab_w_vectors[ind_winner].bottom_n != -1) update_single_node(la->dimension, learning_rate, standard_deviation, p, &la->tab_w_vectors[la->tab_w_vectors[ind_winner].bottom_n], &la->tab_w_vectors[ind_winner], x);
 }
