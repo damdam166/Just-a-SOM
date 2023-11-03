@@ -3,7 +3,6 @@
 #include <time.h>
 
 
-#include "functions/functions.h"
 #include "kohonen_algorithm/kohonen_som.h"
 
 
