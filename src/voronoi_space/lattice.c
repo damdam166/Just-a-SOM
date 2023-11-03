@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+
 #include "../functions/functions.h"
 #include "lattice.h"
+#include "../neighborhood/neighborhood.h"
 
 
 Lattice new_lattice(unsigned int lines, unsigned int rows, unsigned int dim, Topology topo) {
@@ -59,7 +62,10 @@ Lattice initialize_weights(Lattice la, double *tab_min, double *tab_max) {
 
         for (int i_dim = 0; i_dim < la->dimension; ++i_dim) {
 
+            // Random initialization of the weights
             la->tab_w_vectors[i_w].vector[i_dim] = RANDOM_VALUE_FUNCTION(tab_min[i_dim], tab_max[i_dim]);
+
+
         }
     }
 
