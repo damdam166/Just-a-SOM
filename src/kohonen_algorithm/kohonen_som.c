@@ -4,6 +4,7 @@
 #include "kohonen_som.h"
 
 
+// Find winner
 int find_winner(int p, Lattice la, double *X) {
 
     if (is_empty_lattice(la)) return 0;
@@ -17,4 +18,16 @@ int find_winner(int p, Lattice la, double *X) {
     }
 
     return ind_temp;
+}
+
+
+// Adaptation
+void update_single_node(Node pt_nd, int ind_vector, int winner, double learning_rate, double standard_deviation) {
+
+    if (is_empty_node(pt_nd)) return ;
+
+
+
+
+
 }
